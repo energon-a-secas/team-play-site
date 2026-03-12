@@ -1,0 +1,12 @@
+{
+  "name": "team-play-capture-previews",
+  "private": true,
+  "description": "Capture preview screenshots for Team Play resource cards",
+  "scripts": {
+    "capture": "node capture-previews.js",
+    "capture:one": "node capture-previews.js --one"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

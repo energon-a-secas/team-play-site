@@ -1,0 +1,28 @@
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: "#0f172a"
+    primaryTextColor: "#e2e8f0"
+    primaryBorderColor: "#0063e5"
+    lineColor: "#38bdf8"
+    secondaryColor: "#1e293b"
+    tertiaryColor: "#1e293b"
+    clusterBkg: "#f0f7ff"
+    clusterBorder: "#bfdbfe"
+    edgeLabelBackground: "#e8f0ff"
+    mainBkg: "#0f172a"
+    nodeBorder: "#0063e5"
+    titleColor: "#1e1b4b"
+    fontFamily: "ui-sans-serif, system-ui, -apple-system, sans-serif"
+    fontSize: "13px"
+---
+
+flowchart TB
+    User([User]) --> HTML["index.html\nEmbedded CSS + JS"]
+
+    subgraph App["Single-File App (No Build Step)"]
+        HTML --> Sections["Merged sections\nGames, Interactions, Retros, Virtual, Random"]
+        HTML --> Cards["Resource cards\nPreview image + title + link + optional video"]
+        Cards --> Placeholder["Placeholder when\nscreenshot missing"]
+    end

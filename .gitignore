@@ -1,0 +1,16 @@
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+
+# ── Playwright MCP (Claude Code browser automation — screenshots, logs) ───────
+.playwright-mcp/
+
+# ── Node (local tooling only — these projects have no npm dependencies) ───────
+node_modules/
+npm-debug.log*
+
+# ── Scripts (capture-previews) ───────────────────────────────────────────────
+scripts/node_modules/
+
+# ── Secrets — never commit ────────────────────────────────────────────────────
+.env
+.env.*
